@@ -19,28 +19,28 @@ end
 operations
 
 MoveRight ()
-ext wr row: nat1
+ext wr col: nat1
   wr move: [Moves]
-pre row < MAX and move <> <RIGHT>
-post row = row~ + 1 and move = <RIGHT>;
+pre col < MAX and move <> <RIGHT>
+post col = col~ + 1 and move = <RIGHT>;
 
 MoveLeft ()
-ext wr row: nat1
+ext wr col: nat1
   wr move: [Moves]
-pre row > MIN and move <> <LEFT>
-post row = row~ - 1 and move = <LEFT>;
+pre col > MIN and move <> <LEFT>
+post col = col~ - 1 and move = <LEFT>;
 
 MoveUp ()
-ext wr col: nat1
+ext wr row: nat1
   wr move: [Moves]
-pre col > MIN and move <> <UP>
-post col = col~ - 1 and move = <UP>;
+pre row > MIN and move <> <UP>
+post row = row~ - 1 and move = <UP>;
 
 MoveDown ()
-ext wr col: nat1
+ext wr row: nat1
   wr move: [Moves]
-pre col < MAX and move <> <DOWN>
-post col = col~ + 1 and move = <DOWN>;
+pre row < MAX and move <> <DOWN>
+post row = row~ + 1 and move = <DOWN>;
 
 GetRow() currentRow: nat1
 ext rd row: nat1
