@@ -1,0 +1,65 @@
+types
+  Moves = <LEFT>|<RIGHT>|<UP>|<DOWN>
+
+values 
+MAX : nat1 = 6;
+MIN : nat1 = 1;
+
+state RobotMonitor of
+  row: nat1
+  col: nat1
+  move: [Moves]
+inv mk_RobotMonitor(X, Y, M) ==
+  (X >= MIN and X <= MAX) and 
+  (Y >= MIN and Y <= MAX) and
+  (M in set {<LEFT>, <RIGHT>, <UP>, <DOWN>, nil}) 
+init RM == RM = mk_RobotMonitor(1, 1, nil)
+end
+
+operations
+
+MoveRight ()
+ext wr col: nat1
+  wr move: [Moves]
+pre col < MAX and move <> <RIGHT>
+post col = col~ + 1 and move = <RIGHT>;
+
+MoveLeft ()
+ext wr col: nat1
+  wr move: [Moves]
+pre col > MIN and move <> <LEFT>
+post col = col~ - 1 and move = <LEFT>;
+
+MoveUp ()
+ext wr row: nat1
+  wr move: [Moves]
+pre row > MIN and move <> <UP>
+post row = row~ - 1 and move = <UP>;
+
+MoveDown ()
+ext wr row: nat1
+  wr move: [Moves]
+pre row < MAX and move <> <DOWN>
+post row = row~ + 1 and move = <DOWN>;
+
+GetRow() currentRow: nat1
+ext rd row: nat1
+pre true
+post currentRow = row;
+
+GetCol() currentCol: nat1
+ext rd col: nat1
+pre true
+post currentCol = col;
+
+GetMove() lastMove: [Moves]
+ext rd move: [Moves]
+pre true
+post lastMove = move;
+
+Exit ()
+ext wr row: nat1
+  wr col: nat1
+  wr move: [Moves]
+pre row = MAX and col = MAX
+post row = MIN and col = MIN and move = nil;

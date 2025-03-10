@@ -1,0 +1,56 @@
+values
+
+t0:RobotMonitor = mk_RobotMonitor(1, 1, nil);
+t1:RobotMonitor = mk_RobotMonitor(1, 1, <LEFT>); 
+t2:RobotMonitor = mk_RobotMonitor(1, 1, <UP>);
+t3:RobotMonitor = mk_RobotMonitor(6, 6, <RIGHT>);
+
+t4:RobotMonitor = mk_RobotMonitor(2, 1, <DOWN>);
+t5:RobotMonitor = mk_RobotMonitor(3, 1, <DOWN>);
+t6:RobotMonitor = mk_RobotMonitor(4, 1, <DOWN>);
+t7:RobotMonitor = mk_RobotMonitor(5, 1, <DOWN>);
+t8:RobotMonitor = mk_RobotMonitor(6, 1, <DOWN>);
+
+t9:RobotMonitor = mk_RobotMonitor(1, 2, <DOWN>);
+t10:RobotMonitor = mk_RobotMonitor(1, 3, <DOWN>);
+t11:RobotMonitor = mk_RobotMonitor(1, 4, <DOWN>);
+t12:RobotMonitor = mk_RobotMonitor(1, 5, <DOWN>);
+t13:RobotMonitor = mk_RobotMonitor(1, 6, <DOWN>);
+
+t14:RobotMonitor = mk_RobotMonitor(2, 1, <UP>);
+t15:RobotMonitor = mk_RobotMonitor(3, 1, <UP>);
+t16:RobotMonitor = mk_RobotMonitor(4, 1, <UP>);
+t17:RobotMonitor = mk_RobotMonitor(5, 1, <UP>);
+t18:RobotMonitor = mk_RobotMonitor(6, 1, <UP>);
+
+t19:RobotMonitor = mk_RobotMonitor(1, 2, <UP>);
+t20:RobotMonitor = mk_RobotMonitor(1, 3, <UP>);
+t21:RobotMonitor = mk_RobotMonitor(1, 4, <UP>);
+t22:RobotMonitor = mk_RobotMonitor(1, 5, <UP>);
+t24:RobotMonitor = mk_RobotMonitor(1, 6, <UP>);
+
+t25:RobotMonitor = mk_RobotMonitor(2, 1, <LEFT>);
+t26:RobotMonitor = mk_RobotMonitor(3, 1, <LEFT>);
+t27:RobotMonitor = mk_RobotMonitor(4, 1, <LEFT>);
+t28:RobotMonitor = mk_RobotMonitor(5, 1, <LEFT>);
+t29:RobotMonitor = mk_RobotMonitor(6, 1, <LEFT>);
+
+t30:RobotMonitor = mk_RobotMonitor(1, 2, <LEFT>);
+t31:RobotMonitor = mk_RobotMonitor(1, 3, <LEFT>);
+t32:RobotMonitor = mk_RobotMonitor(1, 4, <LEFT>);
+t33:RobotMonitor = mk_RobotMonitor(1, 5, <LEFT>);
+t34:RobotMonitor = mk_RobotMonitor(1, 6, <LEFT>);
+
+t35:RobotMonitor = mk_RobotMonitor(2, 1, <RIGHT>);
+t36:RobotMonitor = mk_RobotMonitor(3, 1, <RIGHT>);
+t37:RobotMonitor = mk_RobotMonitor(4, 1, <RIGHT>);
+t38:RobotMonitor = mk_RobotMonitor(5, 1, <RIGHT>);
+t39:RobotMonitor = mk_RobotMonitor(6, 1, <RIGHT>);
+
+t40:RobotMonitor = mk_RobotMonitor(1, 2, <RIGHT>);
+t41:RobotMonitor = mk_RobotMonitor(1, 3, <RIGHT>);
+t42:RobotMonitor = mk_RobotMonitor(1, 4, <RIGHT>);
+t43:RobotMonitor = mk_RobotMonitor(1, 5, <RIGHT>);
+t44:RobotMonitor = mk_RobotMonitor(1, 6, <RIGHT>);
+
+t45:RobotMonitor = mk_RobotMonitor(6, 6, nil);
